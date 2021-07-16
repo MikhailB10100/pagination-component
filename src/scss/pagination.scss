@@ -1,0 +1,16 @@
+
+
+.selected {
+  color: blue;
+}
+
+.pagination-list {
+  color: white;
+  display: flex;
+}
+
+.pagination-list * {
+  background-color: blueviolet;
+  margin: 3px;
+  padding: 10px;
+}

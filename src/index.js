@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Pagination from './components/Pagination'
 import './scss/index.scss'
 
 class App extends React.Component {
-
   render() {
-    return (
-      <div className="hello">Hello, World!</div>
-    )
+    const count = 500
+    return <Pagination totalCount={count}/>
   }
 }
 
