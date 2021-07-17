@@ -1,0 +1,44 @@
+@media (max-width: 770px) {
+  .item-image {
+    width: 100px;
+  }
+}
+
+@media (max-width: 650px) {
+  .pagination {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    margin: 10px 20px;
+  }
+  .pagination-list * {
+    padding: 7px;
+  }
+}
+
+@media (max-width: 350px) {
+  .pagination-list * {
+    padding: 5px;
+    font-size: 14px;
+  }
+  .content-body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 295px) {
+  .pagination-list * {
+    padding: 1px;
+    font-size: 14px;
+  }
+  .content-body {
+    font-size: 10px;
+  }
+}
+

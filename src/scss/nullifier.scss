@@ -76,3 +76,19 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+// remove arrows at input type='number'
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+// remove select arrow
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
