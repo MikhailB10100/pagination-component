@@ -81,14 +81,7 @@
     border: 1px solid #d6d6d6;
     color: white;
   }
-
-  .selected {
-    color: black;
-    background-color: white;
-    border: 1px solid #b1b1b1;
-  }
   
-
   &-chose_page-input {
     border-radius: 30px;
     width: 60px;
@@ -96,3 +89,13 @@
   }
 }
 
+.selected {
+  color: black;
+  background-color: white;
+  border: 1px solid #b1b1b1;
+}
+
+.disabled {
+  background: #9d9d9e;
+  cursor: auto;
+}

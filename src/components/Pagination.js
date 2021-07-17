@@ -108,9 +108,9 @@ const Pagination = (props) => {
     return (
       <>
         <ul className="pagination-list" onClick={openPage} onMouseDown={e => e.preventDefault()}>
-          <button className="pagination-list-switch_button" disabled={pageIsFirst} onClick={() => updateLastPageInfo(lastPageNumber-1)}>{'<'}</button>
+          <button className={`pagination-list-switch_button${pageIsFirst ? ' disabled' : ''}`} disabled={pageIsFirst} onClick={() => updateLastPageInfo(lastPageNumber-1)}>{'<'}</button>
           {arr}
-          <button className="pagination-list-switch_button" disabled={pageIsLast} onClick={() => updateLastPageInfo(+lastPageNumber+1)}>{'>'}</button>
+          <button className={`pagination-list-switch_button${pageIsLast ? ' disabled' : ''}`} disabled={pageIsLast} onClick={() => updateLastPageInfo(+lastPageNumber+1)}>{'>'}</button>
         </ul>
         <div className="pagination-chose_page">
           <span className="pagination-chose_page-max">Switch<br/>{`Pages: ${pagesCount}`}</span>
