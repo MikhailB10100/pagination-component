@@ -1,4 +1,10 @@
+.item {
+  display: flex;
 
+  &-image {
+    width: 40px;
+  }
+}
 
 .selected {
   color: blue;
@@ -13,4 +19,5 @@
   background-color: blueviolet;
   margin: 3px;
   padding: 10px;
+  cursor: pointer;
 }
