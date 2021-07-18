@@ -49,10 +49,7 @@
 .pagination {
   display: flex;
 
-  &-list {
-    color: white;
-    display: flex;
-  }
+  
 
   &-chose_page {
     display: flex;
@@ -81,7 +78,23 @@
     border: 1px solid #d6d6d6;
     color: white;
   }
+
+  &-list * {
+    width: 55.375px;
+    text-align: center;
+  }
   
+
+  &-list {
+    color: white;
+    display: flex;
+
+    &-switch_button {
+      background-color: #3a3a3a;
+      width: auto;
+    }
+  }
+
   &-chose_page-input {
     border-radius: 30px;
     width: 60px;

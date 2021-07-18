@@ -8,7 +8,7 @@ const Pagination = (props) => {
   const [items, setItems] = useState([])
   const pageIsFirst = lastPageNumber == 1
   const pageIsLast = lastPageNumber == pagesCount
-  const [chosenPage, setChosenPage] = useState('')
+  const [chosenPage, setChosenPage] = useState(1)
 
   const updateLastPageInfo = (newValue) => {
     localStorage.setItem('lastPageNumber', newValue)
@@ -108,9 +108,9 @@ const Pagination = (props) => {
     return (
       <>
         <ul className="pagination-list" onClick={openPage} onMouseDown={e => e.preventDefault()}>
-          <button className={`pagination-list-switch_button${pageIsFirst ? ' disabled' : ''}`} disabled={pageIsFirst} onClick={() => updateLastPageInfo(lastPageNumber-1)}>{'<'}</button>
+          <button style={{width: 'auto'}} className={`pagination-list-switch_button${pageIsFirst ? ' disabled' : ''}`} disabled={pageIsFirst} onClick={() => updateLastPageInfo(lastPageNumber-1)}>{'<'}</button>
           {arr}
-          <button className={`pagination-list-switch_button${pageIsLast ? ' disabled' : ''}`} disabled={pageIsLast} onClick={() => updateLastPageInfo(+lastPageNumber+1)}>{'>'}</button>
+          <button style={{width: 'auto'}} className={`pagination-list-switch_button${pageIsLast ? ' disabled' : ''}`} disabled={pageIsLast} onClick={() => updateLastPageInfo(+lastPageNumber+1)}>{'>'}</button>
         </ul>
         <div className="pagination-chose_page">
           <span className="pagination-chose_page-max">Switch<br/>{`Pages: ${pagesCount}`}</span>

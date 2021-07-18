@@ -1,31 +1,28 @@
+@import "mixins";
+
 @media (max-width: 770px) {
   .item-image {
     width: 100px;
   }
-}
-
-@media (max-width: 650px) {
   .pagination {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   .item {
     margin: 10px 20px;
   }
   .pagination-list * {
-    padding: 7px;
+    @include mediamix (4px, 14px, 43.37px);
   }
 }
 
 @media (max-width: 350px) {
   .pagination-list * {
-    padding: 5px;
-    font-size: 14px;
+    @include mediamix (4px, 12px, 30.023px);
   }
   .content-body {
     font-size: 14px;
@@ -34,8 +31,10 @@
 
 @media (max-width: 295px) {
   .pagination-list * {
+    @include mediamix (1px, 12px, 23.022px);
     padding: 1px;
-    font-size: 14px;
+    font-size: 12px;
+    width: 24.022px;
   }
   .content-body {
     font-size: 10px;

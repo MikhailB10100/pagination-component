@@ -1,0 +1,5 @@
+@mixin mediamix ($pad, $f-s, $w) {
+  padding: $pad;
+  font-size: $f-s;
+  width: $w;
+}
